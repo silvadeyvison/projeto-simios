@@ -1,0 +1,222 @@
+/*folha de estilo Hero Pets - Teste Técnico em Desenvolvimento */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background-position: 30%;
+    color: #333;
+    
+}
+
+header {
+    background-color: #bfe9f8;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 20px;
+    color: #000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
+h4 {
+    font-size: 25px;
+    color: #292929;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #3a8f3d;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    }
+
+nav a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color:#bfe9f8;
+    color: #333;
+}
+
+
+@media screen and (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    logo {
+        margin-bottom: 0;
+    }
+}
+
+.logo {
+    width: 200px;
+    display: block;
+    align-items: center;
+    position: absolute;
+    top: 1%;
+    left: 15px;
+    max-width: 200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+    gap: 15px; 
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-mapa {
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: right;
+    align-items: right;
+}
+
+.container {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #fffefe;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.animal-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 0px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.animal-imagem {
+    max-width: 120px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+#depoimentos {
+
+    text-align: center;
+
+}
+
+.depoimento {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+}
+
+.depoimento img {
+    max-width: 120px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.autor {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+form {
+    margin: 10px auto;
+    width: 400px;
+    padding: 1px;
+    border: 0 solid #333;
+    border-radius: 10px;
+    margin-left: 5px;
+
+}
+
+form div + div {
+    margin-top: 10px;
+}
+
+label {
+    display: inline;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+}
+
+input, textarea {
+    font: 18px sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 50px;
+    resize: vertical;
+}
+
+.button {
+    padding-left: 100px;
+    
+}
+
+button {
+    margin-left: 5px;
+    color: #3a8f3d;
+    background-color: #81d6f5;
+}
+
+footer {
+    background-color: #81d6f5;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
